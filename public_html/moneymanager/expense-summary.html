@@ -1,0 +1,330 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Money Manager</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="js/plugins/fullcalender/fullcalendar.css" rel="stylesheet">
+
+     <!-- Datepicker CSS -->
+     <link href="css/datepicker.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+     <script src="js/jquery-1.11.0.js"></script>
+     <script src="js/plugins/metisMenu/metisMenu.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="headmain">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">Money Manager</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                     Welcome, 
+                    adf                </li>
+                
+               
+                
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        
+                        <li> <a href="index.php?page=Settings"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.php?action=logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+        </div>
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav font-sidebar" id="side-menu">
+                      
+                        <li>
+                            <a href="index.php"><i class="glyphicon glyphicon-home"></i>  Dashboard<span class="fa arrow"></span></a>
+                        </li>
+                        <li>
+                            <a href="index.php?page=Transaction"><i class="glyphicon glyphicon-refresh"></i>  Transaction<span class="fa arrow"></span></a>
+                        </li>
+                        <li>
+                            <a href="index.php?page=AssetReport"><i class="glyphicon glyphicon-stats"></i>  Incomes<span class="fa arrow"></span></a>
+                        </li>
+                        <li>
+                            <a href="index.php?page=ExpenseReport"><i class="glyphicon glyphicon-list-alt"></i> Expenses<span class="fa arrow"></span></a>
+                        </li><li>    
+                                
+                                </li><li>
+                                    <a href="index.php?page=ManageAccount"> <i class="fa fa-tags"></i> Account<span class="fa arrow"></span></a>
+                                </li>
+                         
+                            <!-- /.nav-second-level -->
+                    
+
+                                    
+                                                   
+                        
+                        <li><a href="index.php?page=ManageBudget"><i class="fa fa-archive"></i> Budgets<span class="fa arrow"></span></a>
+                        </li>
+                        
+                    <li>
+                        <a class="parent" href="javascript:void(0)"><i class="fa fa-gears"> </i> Settings<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level" id="subitem">
+                                <li>
+                                    <a href="index.php?page=ManageExpenseCategory"><i class="fa fa-caret-right"></i> Expense Categories</a>
+                                </li>
+                                <li>
+                                    <a href="index.php?page=ManageIncomeCategory"><i class="fa fa-caret-right"></i> Income Categories</a>
+                                </li>
+                                
+                        </ul>
+                    </li>
+
+                    <li>
+                         <a class="parent" href="javascript:void(0)"><i class="fa fa-print"> </i> Reports &amp; Graphs<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                                <li>
+                                    <a id="subitem" href="index.php?page=IncomeVsExpense"><i class="fa fa-caret-right"> </i> Income Vs Expense</a>
+                                </li>
+                                <li>
+                                    <a id="subitem" href="index.php?page=IncomeCalender"><i class="fa fa-caret-right"> </i> Income Calender</a>
+                                </li>
+                                <li>
+                                    <a id="subitem" href="index.php?page=ExpenseCalender"><i class="fa fa-caret-right"> </i> Expense Calender</a>
+                                </li>
+                                <li>
+                                    <a id="subitem" href="index.php?page=AllIncomeReports"><i class="fa fa-caret-right"></i> Income Reports</a>
+                                </li>
+                                <li>
+                                    <a class="active" id="subitem" href="index.php?page=AllExpenseReports"><i class="fa fa-caret-right"></i> Expense Reports</a>
+                                </li>
+                                
+                        </ul>
+                    </li> 
+                       <li>
+                            <a href="index.php?page=Settings"><i class="fa fa-user"> </i> Profile Settings<span class="fa arrow"></span></a>
+                        </li>
+                        
+                         <li>
+                            <a href="index.php?action=logout"><i class="glyphicon glyphicon-log-out"></i>  Logout<span class="fa arrow"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+<script>
+
+$(document).ready(function () {
+    $(this).parent().addClass("collapse");
+    $(".parent").on('click', function () {
+        $(this).parent().find("#subitem").slideToggle();
+    });
+});
+
+</script>
+      
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Expense Summary</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+                       
+            <div class="row">
+				<div class="col-lg-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Overall Report                        </div>
+                        <div class="panel-body">
+                            <p class="btn btn-primary">Total Expense Today $ 100,000</p><br><br>
+                            <p class="btn btn-warning">Total Expense this month $ 100,000</p><br><br>
+                            <p class="btn btn-info">Total Expense:  $ 100,000</p><br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                           <i class="glyphicon glyphicon-stats"></i> History of Expense                            
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+							<div class="pull-right">
+								<form action="" method="post">
+							<div class="form-group input-group col-lg-5	pull-right">
+                                            <input type="text" name="search" placeholder="Search..." class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary" name="searchbtn" type="input"><i class="fa fa-search"></i>
+                                                </button>
+                                            </span> 
+                                 </div>
+                                 </form> 
+                                 
+                            </div>     
+                            <div class="">
+                                <table class="table table-bordered table-hover table-striped" id="assetsdata">
+                                    <thead>
+        			                <tr>
+        			                    <th class="text-left">Title</th>
+        			                    <th class="text-left">Date</th>
+        			                    <th class="text-left">Category</th>
+        			                    <th class="text-left">Account</th>
+        			                    <th class="text-left">Description</th>
+        			                    <th class="text-left">Amount</th>        			                   
+        			                </tr>
+			                     </thead>
+
+	                	<tbody>
+							 							<tr>
+							<td>Mua s?a</td>
+							<td>Jan 01 1970</td>
+							<td>Food</td>
+							<td>Cash</td>
+							<td>12431243123</td>
+							<td>$ 100,000</td>
+							
+							</tr>
+	                	</tbody>
+	                	
+
+								
+	                		    
+						
+		                <tfoot>
+			                <tr>
+			                    <th class="text-left">Title</th>
+			                    <th class="text-left">Date</th>
+			                    <th class="text-left">Category</th>
+			                    <th class="text-left">Account</th>
+			                    <th class="text-left">Description</th>
+			                    <th class="text-left">Amount</th>      
+			                </tr>
+		                </tfoot>
+	           			</table>
+                            </div>
+                            <!-- /.table-responsive -->
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    
+                </div>
+             
+               
+                <!-- /.col-lg-4 -->
+            </div>
+            <a href="pages/ExpenseReportPdf.php?filter=" class="btn white btn-warning"><i class="glyphicon glyphicon-download-alt"></i> Download Expense Reports</a>
+            <a href="pages/ExpenseReportCSV.php?filter=" class="btn white btn-warning"><i class="glyphicon glyphicon-download-alt"></i> Download Expense CSV</a>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+   
+
+
+ <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+	
+	<!--<script src="js/migrate.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+	<script src="js/plugins/fullcalender/lib/moment.min.js"></script>
+	<script src="js/plugins/fullcalender/fullcalendar.min.js"></script>
+	<!--<script src="js/plugins/qtip/jquery.qtip.min.js"></script>
+	
+	
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+     <!-- Datepicker JavaScript -->
+     <script src="js/bootstrap-datepicker.js"></script>
+       
+    <!-- DataTables JavaScript -->
+    <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+
+     <script>
+    
+        $('#income .input-group.date').datepicker({
+            autoclose: true,
+            format: "yyyy-mm-dd",
+            todayHighlight: true
+        });
+        $('#expense .input-group.date').datepicker({
+            autoclose: true,
+            format: "yyyy-mm-dd",
+            todayHighlight: true
+        });
+   
+    </script>
+
+
+</div></body>
