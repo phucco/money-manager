@@ -1,14 +1,7 @@
-/*!
- * Custom Theme
- */
-
 @font-face {
   font-family: 'Open Sans';
-
-  src: url('../fonts/OpenSans.woff');
-  
+  src: url('../fonts/OpenSans.woff');  
 }
-
 
 body {
     background: #fff;
@@ -402,4 +395,9 @@ background: none repeat scroll 0% 0% #F9F9F9 !important;
 
 .navbar-right{
     margin-right: 0px !important;
+}
+
+.page-header {
+    margin-top: 21px;
+    margin-bottom: 10.5px;
 }
