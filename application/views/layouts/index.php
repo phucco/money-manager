@@ -78,247 +78,248 @@
                 <li>
                     <a href="index.php?action=logout"><i class="glyphicon glyphicon-log-out"></i>  Logout<span class="fa arrow"></span></a>
                 </li>
-            </ul>
-        </div>
-        <!-- /.sidebar-collapse -->
-    </div>
-    <!-- /.navbar-static-side -->
-</nav>
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </nav>
 
-<div id="page-wrapper">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Dashboard</h1>
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-red">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="glyphicon glyphicon-calendar fa-4x"></i>
-                        </div>
-                        <div class="col-xs-12 text-left">
-                            <h2>$ 0</h2>
-                            <div>Current Expense This Month</div>
-                        </div>
-                    </div>
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Dashboard</h1>
                 </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left"></span>
-                        <span class="pull-right"></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
+                <!-- /.col-lg-12 -->
             </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="glyphicon glyphicon-calendar fa-4x"></i>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="glyphicon glyphicon-calendar fa-4x"></i>
+                                </div>
+                                <div class="col-xs-12 text-left">
+                                    <h2>$ 0</h2>
+                                    <div>Current Expense This Month</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 text-left">
-                            <h2>$ 0</h2>
-                            <div>Current Income This Month</div>
-                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left"></span>
+                                <span class="pull-right"></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left"></span>
-                        <span class="pull-right"></span>
-                        <div class="clearfix"></div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="glyphicon glyphicon-calendar fa-4x"></i>
+                                </div>
+                                <div class="col-xs-12 text-left">
+                                    <h2>$ 0</h2>
+                                    <div>Current Income This Month</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left"></span>
+                                <span class="pull-right"></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="glyphicon glyphicon-resize-full fa-4x"></i>
+                                </div>
+                                <div class="col-xs-12 text-left">
+                                    <h2>$ 0 </h2>
+                                    <div>Your Total Expense</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left"></span>
+                                <span class="pull-right"></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <i class="glyphicon glyphicon-resize-small fa-4x"></i>
+                                </div>
+                                <div class="col-xs-12 text-left">
+                                    <h2>$ 0 </h2>
+                                    <div>Your Current Total Balance</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left"></span>
+                                <span class="pull-right"></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-red">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="glyphicon glyphicon-resize-full fa-4x"></i>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Latest 10 Income
                         </div>
-                        <div class="col-xs-12 text-left">
-                            <h2>$ 0 </h2>
-                            <div>Your Total Expense</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Title</th>
+                                                <th>Date</th>
+                                                <th>Account</th>
+                                                <th>Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center"><a href="index.php?page=AssetReport">View Details</a></div>
+                            </div>
                         </div>
+                        <!-- /.panel-body -->
                     </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left"></span>
-                        <span class="pull-right"></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-green">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-1">
-                            <i class="glyphicon glyphicon-resize-small fa-4x"></i>
+                    <!-- /.panel -->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Account Balances
                         </div>
-                        <div class="col-xs-12 text-left">
-                            <h2>$ 0 </h2>
-                            <div>Your Current Total Balance</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left"></span>
-                        <span class="pull-right"></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <i class="fa fa-bar-chart-o fa-fw"></i> Latest 10 Income
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div>
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Title</th>
-                                        <th>Date</th>
-                                        <th>Account</th>
-                                        <th>Amount</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="text-center"><a href="index.php?page=AssetReport">View Details</a></div>
-                    </div>
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <i class="fa fa-bar-chart-o fa-fw"></i> Account Balances
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Title</th>
-                                            <th>Amount</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    </tbody>
-                                </table>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- /.panel -->
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                    <i class="fa fa-bar-chart-o fa-fw"></i> Budget Progress On <b>April 2019</b>
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-12">
+                    <!-- /.panel -->
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Budget Progress On <b>April 2019</b>
                         </div>
-                        <div class="text-center"></div>
-                        <!-- /.col-lg-4 (nested) -->
-                        <!-- /.col-lg-8 (nested) -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-        </div>
-        <!-- /.col-lg-8 -->
-        <div class="col-lg-6">
-            <div class="panel panel-red">
-                <div class="panel-heading">
-                    <i class="fa fa-bar-chart-o fa-fw"></i> Latest 10 Expense
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Title</th>
-                                            <th>Date</th>
-                                            <th>Account</th>
-                                            <th>Amount</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    </tbody>
-                                </table>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                </div>
+                                <div class="text-center"></div>
+                                <!-- /.col-lg-4 (nested) -->
+                                <!-- /.col-lg-8 (nested) -->
                             </div>
-                            <!-- /.table-responsive -->
+                            <!-- /.row -->
                         </div>
-                        <div class="text-center"><a href="index.php?page=ExpenseReport">View Details</a></div>
-                        <!-- /.col-lg-4 (nested) -->
-                        <!-- /.col-lg-8 (nested) -->
+                        <!-- /.panel-body -->
                     </div>
-                    <!-- /.row -->
+                    <!-- /.panel -->
                 </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-            <!-- /.panel -->
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                <i class="fa fa-bar-chart-o fa-fw"></i> Reports Expense/Income                        </div>
-                <div class="panel-body">
-                    <div id="incomevsexpense">
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Latest 10 Expense
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>Date</th>
+                                                    <th>Account</th>
+                                                    <th>Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.table-responsive -->
+                                </div>
+                                <div class="text-center"><a href="index.php?page=ExpenseReport">View Details</a></div>
+                                <!-- /.col-lg-4 (nested) -->
+                                <!-- /.col-lg-8 (nested) -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.panel-body -->
                     </div>
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-            <!-- /.panel -->
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                <i class="fa fa-bar-chart-o fa-fw"></i> Report Expense/Income This Month                        </div>
-                <div class="panel-body">
-                    <div id="incomevsexpensemonth">
+                    <!-- /.panel -->
+                    <!-- /.panel -->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                        <i class="fa fa-bar-chart-o fa-fw"></i> Reports Expense/Income                        </div>
+                        <div class="panel-body">
+                            <div id="incomevsexpense">
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
                     </div>
+                    <!-- /.panel -->
+                    <!-- /.panel -->
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                        <i class="fa fa-bar-chart-o fa-fw"></i> Report Expense/Income This Month                        </div>
+                        <div class="panel-body">
+                            <div id="incomevsexpensemonth">
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    <!-- /.panel .chat-panel -->
                 </div>
-                <!-- /.panel-body -->
+                <!-- /.col-lg-4 -->
             </div>
-            <!-- /.panel -->
-            <!-- /.panel .chat-panel -->
+            <!-- /.row -->
         </div>
-        <!-- /.col-lg-4 -->
-    </div>
-    <!-- /.row -->
-</div>
+        </div>
 <!-- /#page-wrapper -->
 <script>
 /*$(function() {
@@ -387,6 +388,6 @@ $(document).ready(function () {
     });
 });
 </script>
-</div>
+
 </body>
 </html>
