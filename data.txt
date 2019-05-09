@@ -1,0 +1,34 @@
+List category
+
+1. Expense
+'Food'
+'Entertainment'
+'My Darling'
+'Working'
+'Shopping'
+'Education'
+'Transportation'
+'Communication'
+'Health'
+'Investments'
+'Transfer From'
+'Bank Fees'
+'Other Expense'
+
+2. Income
+'Salary'
+'Given Cash'
+'Investments Income'
+'Freelance Job'
+'Transfer To'
+'Cashback'
+'Other Income'
+
+List Wallet
+
+'Cash'
+'VPBank'
+'Credit Card'
+'ABBank'
+'VIB'
+'Sacombank'

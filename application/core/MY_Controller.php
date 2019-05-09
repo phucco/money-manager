@@ -15,31 +15,28 @@ class MY_Controller extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		
-		$url = $this->uri->segment(1);
-		
-		$this->data['site_lang'] = $this->session->userdata('site_lang');
+				
+		$this->data['module'] = $this->uri->rsegment(1);
+		$this->data['action'] = $this->uri->rsegment(2);
 
-		if ($url == 'admin')
-		{
-			// $this->_check_login();
+		$this->_check_login();
 
-			$this->load->helper('permission_helper');
-			$this->load->helper('role_helper');
-			$this->load->helper('user_helper');
+		// 	$this->load->helper('permission_helper');
+		// 	$this->load->helper('role_helper');
+		// 	$this->load->helper('user_helper');
 
-			$module = $this->uri->rsegment(1);
-			$action = $this->uri->rsegment(2);
+		// 	$module = 
+		// 	$action = $this->uri->rsegment(2);
 
-			$this->data['page_title'] = ucfirst(to_vn($module)) . ' | The Farm Story';
+		// 	$this->data['page_title'] = ucfirst(to_vn($module)) . ' | The Farm Story';
 
-			$this->data['temp'] = 'admin/' . $module . '/' . $action;
+		// 	$this->data['temp'] = 'admin/' . $module . '/' . $action;
 
-			$this->data['module'] = $module;
+		// 	$this->data['module'] = $module;
 
-			if ( $module != 'dashboard' && file_exists(APPPATH . 'models/' . $module . '_model.php') ) $this->load->model($module . '_model'); 
+		// 	if ( $module != 'dashboard' && file_exists(APPPATH . 'models/' . $module . '_model.php') ) $this->load->model($module . '_model'); 
 			
-		}
+		// }
 
 	}
 
@@ -50,7 +47,7 @@ class MY_Controller extends CI_Controller
 
 		if ( ! $this->_valid_login() && $url != 'login')
 		{
-			redirect(admin_url('login/'));
+			redirect(base_url('login/'));
 		}
 	}
 
@@ -87,23 +84,11 @@ class MY_Controller extends CI_Controller
 	
 	protected function _get_token()
 	{
-		$token = $this->session->userdata('anta_session');
+		$token = $this->session->userdata('money_session');
 
 		if ( ! empty($token) )
 		{
 			return strval($token);
-		}
-
-		return FALSE;
-	}
-
-	public function _get_current_user()
-	{
-		$login = $this->_get_row_token();
-
-		if ( ! empty($login) )
-		{
-			return $login->user_id;
 		}
 
 		return FALSE;

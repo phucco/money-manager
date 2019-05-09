@@ -5,28 +5,22 @@
 <meta name="author" content="Me">
 
 <title><?php echo $page_title; ?></title>
-
+<link href="<?php echo base_url(); ?>font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
 
-<!-- MetisMenu CSS -->
 <link href="<?php echo base_url(); ?>css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
 
-<!-- DataTables CSS -->
-<link href="<?php echo base_url(); ?>css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+<!-- <link href="<?php echo base_url(); ?>css/plugins/dataTables.bootstrap.css" rel="stylesheet"> -->
 
-<!-- Custom CSS -->
 <link href="<?php echo base_url(); ?>css/sb-admin-2.css" rel="stylesheet">
 <link href="<?php echo base_url(); ?>css/custom.css" rel="stylesheet">
 <link href="<?php echo base_url(); ?>js/plugins/fullcalender/fullcalendar.css" rel="stylesheet">
 
- <!-- Datepicker CSS -->
  <link href="<?php echo base_url(); ?>css/datepicker.css" rel="stylesheet">
 
-<!-- Morris Charts CSS -->
-<link href="<?php echo base_url(); ?>css/plugins/morris.css" rel="stylesheet">
+<!-- <link href="<?php echo base_url(); ?>css/plugins/morris.css" rel="stylesheet"> -->
 
-<!-- Custom Fonts -->
-<link href="<?php echo base_url(); ?>font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
